@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Breakdown({ hasGuessed, dateToGuess }) {
 
     const isLeap = year => new Date(year, 1, 29).getDate() === 29;

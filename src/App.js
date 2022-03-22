@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 
 import "primereact/resources/themes/lara-light-indigo/theme.css"; //theme
