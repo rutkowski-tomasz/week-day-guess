@@ -43,4 +43,4 @@ npm start
 10. ~~Responsive design~~
 11. ~~Showcase screenshots~~
 12. ~~Workflow badges~~
-13. Tests + integrate with CI pipeline
+13. ~~Tests + integrate with CI pipeline~~
