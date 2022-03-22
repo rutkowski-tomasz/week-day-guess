@@ -41,6 +41,6 @@ npm start
 8. ~~Application refactoring (move breakdown to another component)~~
 9. ~~Time to guess~~
 10. ~~Responsive design~~
-11. Tests + integrate with CI pipeline
-12. Showcase screenshots
-13. ~~Workflow badges~~
+11. ~~Showcase screenshots~~
+12. ~~Workflow badges~~
+13. Tests + integrate with CI pipeline
