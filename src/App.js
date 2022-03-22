@@ -30,7 +30,7 @@ function App() {
       <div className="app-wrapper">
         <div className="app">
           <div className="call-to-action">What was the day of the week for this date?</div>
-          <div className="date-to-guess">{formatDate(dateToGuess)}</div>
+          <div className="date-to-guess" data-testid="date-to-guess">{formatDate(dateToGuess)}</div>
           <Status
             guessedDay={guessedDay}
             dateToGuess={dateToGuess}
