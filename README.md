@@ -24,6 +24,6 @@ npm start
 6. ~~Calculation breakdown~~
 7. ~~CI/CD to Github pages~~
 8. ~~Application refactoring (move breakdown to another component)~~
-9. Statistics (~~time to guess~~, % of success)
-10. Responsive design
+9. ~~Time to guess~~
+10. ~~Responsive design~~
 11. Tests + integrate with CI pipeline
