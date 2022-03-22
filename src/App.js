@@ -46,27 +46,37 @@ function App() {
     setGuessedDay(null);
   };
 
-  const guessedBlock = guessedDay !== null ? <div>
-    {guessedDay === dateToGuess.getDay()
+  const getStatus = () => {
+    if (guessedDay === null)
+      return null;
+
+    return guessedDay === dateToGuess.getDay()
         ? <div>Correct, it was <b>{formatWeekDay(guessedDay)}</b></div>
-        : <div>Incorrect, it was not {formatWeekDay(guessedDay)}. It was <b>{formatWeekDay(dateToGuess.getDay())}</b></div>
-    }
-    <Button label="New guess" onClick={newGuess} />
+        : <div>Incorrect, it was not {formatWeekDay(guessedDay)}. It was <b>{formatWeekDay(dateToGuess.getDay())}</b></div>;
+  };
+
+  const guessedBlock = guessedDay !== null ? <div>
+    <Button label="New guess" onClick={newGuess} width="100%" />
   </div> : null;
 
-  const guessBlock = guessedDay === null ? <div>
+  const guessBlock = guessedDay === null ? <div className="day-buttons">
     {[...Array(7)].map((_, i) =>
         <Button key={i} label={formatWeekDay(i)} onClick={() => guess(i)} />
     )}
   </div> : null;
 
   return (
-    <div className="App">
-      <div>What was the day of the week for this date?</div>
-      {formatDate(dateToGuess)}
-      {guessedBlock}
-      {guessBlock}
-    </div>
+      <div className="app-wrapper">
+        <div className="app">
+          <div className="call-to-action">What was the day of the week for this date?</div>
+          <div className="date-to-guess">{formatDate(dateToGuess)}</div>
+          <div className="status">
+            {getStatus()}
+          </div>
+          {guessedBlock}
+          {guessBlock}
+        </div>
+      </div>
   );
 }
 
