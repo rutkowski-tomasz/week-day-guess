@@ -19,6 +19,7 @@ npm start
 3. ~~Guessing the day of the week~~
 4. ~~New guess~~
 5. ~~Stylize app~~
-6. Calculation breakdown
-7. CI/CD to github pages
-8. Statistics (time to guess, % of success)
+6. ~~Calculation breakdown~~
+7. CI/CD to Github pages
+8. Application refactoring (move breakdown to another component)
+9. Statistics (~~time to guess~~, % of success)

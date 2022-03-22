@@ -23,7 +23,7 @@
   font-weight: 600;
 }
 
-.day-buttons {
+.buttons {
   display: grid;
   grid-gap: 1rem;
   grid-auto-flow: column;
@@ -34,4 +34,39 @@
   height: 32px;
   margin-bottom: 2rem;
   font-weight: 200;
+}
+
+.correct {
+  color: forestgreen;
+}
+
+.incorrect {
+  color: crimson;
+}
+
+.breakdown {
+  height: 144px;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.breakdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.breakdown-content .entry {
+  height: 24px;
+  display: flex;
+}
+
+.breakdown-content .entry .element {
+  flex: 0 60px;
+}
+.breakdown-content .entry .value {
+  flex: 0 300px;
+}
+.breakdown-content .entry.sum {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
