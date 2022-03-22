@@ -21,5 +21,5 @@ npm start
 5. ~~Stylize app~~
 6. ~~Calculation breakdown~~
 7. CI/CD to Github pages
-8. Application refactoring (move breakdown to another component)
+8. ~~Application refactoring (move breakdown to another component)~~
 9. Statistics (~~time to guess~~, % of success)
