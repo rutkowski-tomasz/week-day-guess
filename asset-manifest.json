@@ -1,18 +1,19 @@
 {
-  "main.css": "/week-day-guess/static/css/main.5be55302.chunk.css",
-  "main.js": "/week-day-guess/static/js/main.68c0895d.chunk.js",
-  "main.js.map": "/week-day-guess/static/js/main.68c0895d.chunk.js.map",
-  "static/js/1.8c98aab8.chunk.js": "/week-day-guess/static/js/1.8c98aab8.chunk.js",
-  "static/js/1.8c98aab8.chunk.js.map": "/week-day-guess/static/js/1.8c98aab8.chunk.js.map",
-  "static/css/2.c214d338.chunk.css": "/week-day-guess/static/css/2.c214d338.chunk.css",
-  "static/js/2.e5d44de3.chunk.js": "/week-day-guess/static/js/2.e5d44de3.chunk.js",
-  "static/js/2.e5d44de3.chunk.js.map": "/week-day-guess/static/js/2.e5d44de3.chunk.js.map",
-  "runtime~main.js": "/week-day-guess/static/js/runtime~main.c2acff46.js",
-  "runtime~main.js.map": "/week-day-guess/static/js/runtime~main.c2acff46.js.map",
-  "static/media/primeicons.css": "/week-day-guess/static/media/primeicons.64b5d470.svg",
-  "static/css/main.5be55302.chunk.css.map": "/week-day-guess/static/css/main.5be55302.chunk.css.map",
-  "static/css/2.c214d338.chunk.css.map": "/week-day-guess/static/css/2.c214d338.chunk.css.map",
-  "index.html": "/week-day-guess/index.html",
-  "precache-manifest.67c47dd1238d2bfab26784c6786b9070.js": "/week-day-guess/precache-manifest.67c47dd1238d2bfab26784c6786b9070.js",
-  "service-worker.js": "/week-day-guess/service-worker.js"
+  "files": {
+    "main.css": "/week-day-guess/static/css/main.5d4e8ee2.css",
+    "main.js": "/week-day-guess/static/js/main.8fdce177.js",
+    "static/js/787.1e603559.chunk.js": "/week-day-guess/static/js/787.1e603559.chunk.js",
+    "static/media/primeicons.svg": "/week-day-guess/static/media/primeicons.c6e2053303524e39530c.svg",
+    "static/media/primeicons.eot": "/week-day-guess/static/media/primeicons.7fc4d8e224d1ff1b9c62.eot",
+    "static/media/primeicons.woff": "/week-day-guess/static/media/primeicons.449aa8c65cdc5c2a8686.woff",
+    "static/media/primeicons.ttf": "/week-day-guess/static/media/primeicons.91bacab1f083f2795272.ttf",
+    "index.html": "/week-day-guess/index.html",
+    "main.5d4e8ee2.css.map": "/week-day-guess/static/css/main.5d4e8ee2.css.map",
+    "main.8fdce177.js.map": "/week-day-guess/static/js/main.8fdce177.js.map",
+    "787.1e603559.chunk.js.map": "/week-day-guess/static/js/787.1e603559.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d4e8ee2.css",
+    "static/js/main.8fdce177.js"
+  ]
 }
