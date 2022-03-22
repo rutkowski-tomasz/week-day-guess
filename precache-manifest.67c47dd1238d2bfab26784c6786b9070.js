@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/week-day-guess/static/js/runtime~main.c2acff46.js"
   },
   {
-    "revision": "b29a888ff7f07091c7e08eb0d991e221",
-    "url": "/week-day-guess/static/media/primeicons.b29a888f.ttf"
-  },
-  {
     "revision": "e01fd4133bac49cd2ea07ad6f7c45695",
     "url": "/week-day-guess/static/media/primeicons.e01fd413.eot"
+  },
+  {
+    "revision": "b29a888ff7f07091c7e08eb0d991e221",
+    "url": "/week-day-guess/static/media/primeicons.b29a888f.ttf"
   },
   {
     "revision": "943c3597cd33be56d53df0d1982fa8ff",

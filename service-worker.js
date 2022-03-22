@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/week-day-guess/precache-manifest.21b60e025496fb02b7522d4815406787.js"
+  "/week-day-guess/precache-manifest.67c47dd1238d2bfab26784c6786b9070.js"
 );
 
 workbox.clientsClaim();
