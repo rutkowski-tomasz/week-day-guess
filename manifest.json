@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Guess the week day",
+  "name": "App that helps you to learn how to guess the day of the week of any date",
   "icons": [
     {
       "src": "favicon.ico",
