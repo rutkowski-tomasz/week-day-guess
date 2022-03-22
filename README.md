@@ -1,6 +1,9 @@
-# week-day-guess
+![CI/CD](https://github.com/rutkowski-tomasz/week-day-guess/actions/workflows/main.yml/badge.svg)
+![Deployment](https://github.com/rutkowski-tomasz/week-day-guess/actions/workflows/pages/pages-build-deployment/badge.svg)
 
-[Preview](https://rutkowski-tomasz.github.io/week-day-guess/)
+### [See Live](https://rutkowski-tomasz.github.io/week-day-guess/)
+
+# week-day-guess
 
 This is a project that you can use to learn how to guess (or rather calculate) the day of the week of any given date.
 
@@ -27,3 +30,5 @@ npm start
 9. ~~Time to guess~~
 10. ~~Responsive design~~
 11. Tests + integrate with CI pipeline
+12. Showcase screenshots
+13. ~~Workflow badges~~
