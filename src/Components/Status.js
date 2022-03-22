@@ -15,7 +15,7 @@ function Status({ dateToGuess, guessedDay, startGuessingTime }) {
 
         return guessedDay === dateToGuess.getDay()
             ? <div className="correct">Correct, it was <b>{formatWeekDay(guessedDay)}</b>, guess took {guessTime} seconds</div>
-            : <div className="incorrect">Incorrect, it was not {formatWeekDay(guessedDay)}. It was <b>{formatWeekDay(dateToGuess.getDay())}</b>, guess took <b>{guessTime}</b>s</div>;
+            : <div className="incorrect">Incorrect, it was not {formatWeekDay(guessedDay)}. It was <b>{formatWeekDay(dateToGuess.getDay())}</b>, guess took {guessTime}s</div>;
     };
 
     return <div className="status">

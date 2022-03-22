@@ -31,6 +31,7 @@ jobs:
 #      run: npm test
 
     - name: Upload production-ready build files
+      if: github.ref == 'refs/heads/main'
       uses: actions/upload-artifact@v2
       with:
         name: production-files
