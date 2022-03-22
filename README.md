@@ -11,6 +11,18 @@ This is a project that you can use to learn how to guess (or rather calculate) t
 
 [How to Figure Out the Day of the Week For Any Date Ever](https://www.youtube.com/watch?v=714LTMNJy5M)
 
+## Project showcase
+
+A random date is being picked:
+
+![Guess](/showcase/guess.png "Guess")
+
+You can calculate which day of the week it was (or will be):
+
+![Correct response](/showcase/correct.png "Correct response")
+
+The breakdown of how you should have calculated it yourself is displayed.
+
 ## How to start project?
 
 ```shell
