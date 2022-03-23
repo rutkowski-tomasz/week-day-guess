@@ -1,17 +1,22 @@
 .app-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 100vh;
+  padding: 2rem 0;
+}
+@media (min-width: 930px) {
+  .app-wrapper {
+    align-items: center;
+  }
 }
 
 .app {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: calc(100% - 4rem);
   max-width: 900px;
+  align-items: center;
 }
 
 .call-to-action {
@@ -21,35 +26,39 @@
 }
 
 .date-to-guess {
-  margin: 1rem 0 3rem;
+  margin: 1rem 0 0.5rem;
   font-size: 48px;
   font-weight: 600;
+}
+@media (min-width: 930px) {
+  .date-to-guess {
+    margin-bottom: 3rem;
+  }
 }
 
 .buttons {
   display: grid;
   grid-gap: 1rem;
-  grid-auto-flow: column;
-}
-.buttons.full {
-  display: none;
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 930px) {
-  .buttons.mobile {
-    display: none;
-  }
-  .buttons.full {
-    display: grid;
+
+  .buttons {
+    margin-top: 2rem;
+    grid-auto-flow: column;
   }
 }
 
 .status {
   font-size: 24px;
-  min-height: 32px;
-  margin-bottom: 2rem;
   font-weight: 200;
   text-align: center;
+}
+@media (min-width: 930px) {
+.status {
+  min-height: 32px;
+}
 }
 
 .correct {
