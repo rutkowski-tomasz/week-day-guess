@@ -13,10 +13,10 @@ import Status from "./Components/Status";
 function App() {
   const {formatDate, generateDate} = useDateHelpers();
   const [dateToGuess, setDateToGuess] = useState(generateDate());
-  const [guessedDay, setGuessedDay] = useState(null);
+  const [guessedDay, setGuessedDay] = useState<number | null>(null);
   const [startGuessingTime, setStartGuessingTime] = useState(new Date().getTime());
 
-  const onGuess = (day) => {
+  const onGuess = (day: number): void => {
     setGuessedDay(day);
   };
 

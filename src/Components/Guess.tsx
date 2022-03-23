@@ -4,7 +4,13 @@ import {Button} from "primereact/button";
 import useDateHelpers from "../Helpers/DateHelpers";
 import './Guess.scss';
 
-function Guess({ hasGuessed, onGenerateNewGuess, onGuess }) {
+interface GuessProps {
+    hasGuessed: boolean;
+    onGenerateNewGuess: () => void;
+    onGuess: (x: number) => void;
+}
+
+function Guess({ hasGuessed, onGenerateNewGuess, onGuess }: GuessProps) {
 
     const {formatWeekDay} = useDateHelpers();
 

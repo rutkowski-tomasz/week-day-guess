@@ -1,11 +1,17 @@
 import React from 'react';
 import './Breakdown.scss';
+import useDateHelpers from "../Helpers/DateHelpers";
 
-function Breakdown({ hasGuessed, dateToGuess }) {
+interface BreakdownProps {
+    hasGuessed: boolean;
+    dateToGuess: Date;
+}
 
-    const isLeap = year => new Date(year, 1, 29).getDate() === 29;
+function Breakdown({ hasGuessed, dateToGuess }: BreakdownProps) {
 
-    const getReferenceDate = (month, year) => {
+    const { isLeap } = useDateHelpers();
+
+    const getReferenceDate = (month: number, year: number): number => {
         switch (month) {
             case 0: return !isLeap(year) ? 3 : 4;
             case 1: return !isLeap(year) ? 28 : 29;
@@ -23,7 +29,7 @@ function Breakdown({ hasGuessed, dateToGuess }) {
         }
     };
 
-    const getCenturyReference = (year) => {
+    const getCenturyReference = (year: number): number => {
         year = Math.floor(year / 100) * 100;
 
         while (year < 2000) {
@@ -36,7 +42,7 @@ function Breakdown({ hasGuessed, dateToGuess }) {
         return year;
     };
 
-    const getCenturyOffset = (yearReference) => {
+    const getCenturyOffset = (yearReference: number): number => {
 
         switch (yearReference) {
             case 2000: return 2;
@@ -51,7 +57,7 @@ function Breakdown({ hasGuessed, dateToGuess }) {
     const month = (dateToGuess.getMonth() + 1).toString().padStart(2, '0');
 
     const referenceDate = getReferenceDate(dateToGuess.getMonth(), dateToGuess.getFullYear());
-    let dateOffset = (date - referenceDate) % 7;
+    let dateOffset = (dateToGuess.getDate() - referenceDate) % 7;
     while (dateOffset < 0) {
         dateOffset += 7;
     }

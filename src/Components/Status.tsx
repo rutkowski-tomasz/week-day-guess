@@ -1,9 +1,14 @@
 import React from 'react';
-import * as PropTypes from "prop-types";
 import useDateHelpers from "../Helpers/DateHelpers";
 import './Status.scss';
 
-function Status({ dateToGuess, guessedDay, startGuessingTime }) {
+interface StatusProps {
+    dateToGuess: Date;
+    guessedDay: number | null;
+    startGuessingTime: number;
+}
+
+function Status({ dateToGuess, guessedDay, startGuessingTime }: StatusProps) {
 
     const {formatWeekDay} = useDateHelpers();
 
@@ -23,11 +28,5 @@ function Status({ dateToGuess, guessedDay, startGuessingTime }) {
         {getStatus()}
     </div>
 }
-
-Status.propTypes = {
-    dateToGuess: PropTypes.any,
-    guessedDay: PropTypes.any,
-    startGuessingTime: PropTypes.any,
-};
 
 export default Status;
