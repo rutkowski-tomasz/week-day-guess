@@ -2,6 +2,7 @@ import React from 'react';
 
 import {Button} from "primereact/button";
 import useDateHelpers from "../Helpers/DateHelpers";
+import './Guess.scss';
 
 function Guess({ hasGuessed, onGenerateNewGuess, onGuess }) {
 

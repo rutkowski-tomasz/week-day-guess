@@ -1,14 +1,14 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
-import "primereact/resources/themes/lara-light-indigo/theme.css"; //theme
-import "primereact/resources/primereact.min.css"; //core css
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import {useState} from "react";
 import Breakdown from "./Components/Breakdown";
 import useDateHelpers from "./Helpers/DateHelpers";
 import Guess from "./Components/Guess";
-import Status from "./Components/Status"; //icons
+import Status from "./Components/Status";
 
 function App() {
   const {formatDate, generateDate} = useDateHelpers();

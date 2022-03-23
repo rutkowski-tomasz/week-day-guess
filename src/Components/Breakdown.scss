@@ -1,0 +1,38 @@
+@import "../Styles/variables";
+
+.breakdown {
+  margin-top: 2rem;
+  width: 100%;
+
+  &.guessed {
+    height: calc(425px - 47px);
+  }
+
+  @media (min-width: $smBreakpoint) {
+    height: 144px;
+    &.guessed {
+      height: 144px;
+    }
+  }
+}
+
+.breakdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .entry {
+    height: 24px;
+    display: flex;
+
+    .element {
+      flex: 0 60px;
+    }
+    .value {
+      flex: 0 240px;
+    }
+    &.sum {
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+}

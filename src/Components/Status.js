@@ -1,6 +1,7 @@
 import React from 'react';
 import * as PropTypes from "prop-types";
 import useDateHelpers from "../Helpers/DateHelpers";
+import './Status.scss';
 
 function Status({ dateToGuess, guessedDay, startGuessingTime }) {
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Breakdown.scss';
 
 function Breakdown({ hasGuessed, dateToGuess }) {
 
@@ -69,7 +70,7 @@ function Breakdown({ hasGuessed, dateToGuess }) {
         day -= 7;
     }
 
-    return <div className="breakdown">
+    return <div className={`breakdown ${hasGuessed ? 'guessed' : ''}`}>
         {hasGuessed ?
             <div className="breakdown-content">
                 <div className="entry">
