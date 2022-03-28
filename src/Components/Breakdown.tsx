@@ -57,9 +57,11 @@ function Breakdown({ hasGuessed, dateToGuess }: BreakdownProps) {
     const month = (dateToGuess.getMonth() + 1).toString().padStart(2, '0');
 
     const referenceDate = getReferenceDate(dateToGuess.getMonth(), dateToGuess.getFullYear());
-    let dateOffset = (dateToGuess.getDate() - referenceDate) % 7;
-    while (dateOffset < 0) {
-        dateOffset += 7;
+    const dateOffset = dateToGuess.getDate() - referenceDate;
+
+    let dateAlignedOffset = dateOffset % 7;
+    if (dateAlignedOffset < 0) {
+        dateAlignedOffset += 7;
     }
 
     const century = Math.floor(dateToGuess.getFullYear() / 100) * 100;
@@ -70,18 +72,15 @@ function Breakdown({ hasGuessed, dateToGuess }: BreakdownProps) {
     const twelveYearsCount = Math.floor(decade / 12);
     const twelveRest = decade - (twelveYearsCount * 12);
     const restLeapYears = Math.floor(twelveRest / 4);
-    const sum = dateOffset + centuryOffset + twelveYearsCount + twelveRest + restLeapYears;
-    let day = sum;
-    while (day > 6) {
-        day -= 7;
-    }
+    const sum = dateAlignedOffset + centuryOffset + twelveYearsCount + twelveRest + restLeapYears;
+    const day = sum % 7;
 
     return <div className={`breakdown ${hasGuessed ? 'guessed' : ''}`}>
         {hasGuessed ?
             <div className="breakdown-content">
                 <div className="entry">
                     <div className="element">{date}.{month} is </div>
-                    <div className="value"><b>+{dateOffset}</b> to {referenceDate}.{month}</div>
+                    <div className="value"><b>+{dateAlignedOffset}</b> ({dateOffset > 0 ? '+' + dateOffset : dateOffset}) to {referenceDate}.{month}</div>
                 </div>
                 <div className="entry">
                     <div className="element">{century} is </div>
@@ -101,7 +100,7 @@ function Breakdown({ hasGuessed, dateToGuess }: BreakdownProps) {
                 </div>
                 <div className="entry sum">
                     <div className="element">&nbsp;</div>
-                    <div className="value"><b>+{sum}</b> ({day})</div>
+                    <div className="value"><b>{sum > 0 ? '+' + sum : sum}</b> ({day})</div>
                 </div>
             </div>
             : null}

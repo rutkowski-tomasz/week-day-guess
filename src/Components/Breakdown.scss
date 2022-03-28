@@ -5,14 +5,11 @@
   width: 100%;
 
   &.guessed {
-    height: calc(425px - 47px);
+    height: calc(252px - 63px);
   }
 
   @media (min-width: $smBreakpoint) {
-    height: 144px;
-    &.guessed {
-      height: 144px;
-    }
+    height: 144px !important;
   }
 }
 

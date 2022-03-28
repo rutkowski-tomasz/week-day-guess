@@ -1,13 +1,14 @@
 @import "../Styles/variables";
 
 .status {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 200;
   text-align: center;
   min-height: 64px;
 
   @media (min-width: $smBreakpoint) {
     min-height: 32px;
+    font-size: 24px;
   }
 
   .correct {
